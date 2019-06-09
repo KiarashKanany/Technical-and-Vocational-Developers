@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<script src="js/Chart.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>شرکت برنامه نویسان فنی حرفه ای </title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<body class="noscroll">
+<section class="about">
+    <video src="videos/wallpaper.mp4" autoplay loop muted></video>
+    <div class="content">
+        <h5> تقسیم بندی فروش محصولات در ماه اخیر</h5>
+        <div class="chart">
+        	
+        
+         <canvas id="myChart" width="200" height="200"  ></canvas>
+		<script>
+                                    var ctx = document.getElementById('myChart').getContext('2d');
+                                    var myChart = new Chart(ctx, {
+                                        type: 'pie',
+                                        data: {
+                                        labels: ['تبلت', 'ساعت هوشمند', 'هدفون', 'موبایل', 'لپتاپ'],
+											
+												
+                                        datasets: [{
+                                        label: 'در امد شرکت بر حسب ماه (واحد میلیون)',
+											  
+											 
+                                        data: [80, 100, 30, 250, 500],
+											
+											
+                                        backgroundColor: [
+                                            'rgba(255, 99, 132, 0.7)',
+                                            'rgba(54, 162, 235, 0.7)',
+                                            'rgba(255, 206, 86, 0.7)',
+                                            'rgba(75, 192, 192, 0.7)',
+                                            'rgba(153, 102, 255, 0.7)',
+                                            'rgba(255, 159, 64, 0.7)'
+                                        ],
+                                        borderColor: [
+                                            'rgba(255, 99, 132, 1)',
+                                            'rgba(54, 162, 235, 1)',
+                                            'rgba(255, 206, 86, 1)',
+                                            'rgba(75, 192, 192, 1)',
+                                            'rgba(153, 102, 255, 1)',
+                                            'rgba(255, 159, 64, 1)'
+                                        ],
+                                        borderWidth: 1
+											
+											
+                                        }]
+                                        },
+                                        options: {
+											 
+                                        scales: {
+                                        yAxes: [{
+                                        ticks: {
+                                        beginAtZero: true
+                                        }
+                                        }]
+                                        }
+										
+                                        }
+                                    });
+		Chart.defaults.global.defaultFontSize = 17;
+			Chart.defaults.global.defaultFontColor = 'White';
+
+                    </script>
+		</div>
+    </div>
+    
+
+    <div class="info">
+        <div class="row">
+            <div class="col-10 offset-1">
+                <h5 class="mb-4">شرکت برنامه نویسان فنی و حرفه ای</h5>
+                <p>
+                  برنامه نویسان فنی حرفه ای فعالیت خود را در سال 97 با مدیریت کیارش کنعانی آغاز کرد.این شرکت با هدف پرورش و شکوفایی دانشجویان فنی حرفه ای در زمینه ی عملی و بازار کار سعی در جذب آن ها نمود . این شرکت در زمینه های توسعه ی نرم افزار های داخلی و بین الملی بسیار موفق بوده و در سال 2019 برنده ی بهترین نرم فزار سال شد</p>
+
+                <p>این شرکت جهت حل مشکلات شغل و کارآفرینی متخصص های خود را از فارق التحصیل های دانشکده های فنی و حرفه ای انتخاب کرده و پس از گذراندن دوره کارآموزی آنها را برای کار استخدام می‌کند</p>
+                <p>این شرکت اکنون مشغول به فروش کالای دیجیتال اعم از لپ تاپ ،موبایل ، تبلت، ساعت هوشمند و ... می باشد که نمودار فروش آن  در ماه اخیر را می توانید مشاهده کنید</p>
+            </div>
+        </div>
+    </div>
+   
+                      
+		
+    
+    </section>
+<div class="top-nav-bar-about-us">
+<div class="search-box-about-us">
+    
+ 
+<input type="text" class="form-control-about-us">
+<span class="input-group-text"><i class="fa fa-search"></i></span>
+
+<i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+    <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+    
+</div> 
+<div class="menu-bar">
+<ul>
+<li><a href="#"><i class="fa fa-shopping-basket"></i> سبد خرید</a></li>    
+<li><a href="#">درباره ی ما </a></li>    
+
+<li><a href="#">ورود / ثبت نام</a></li> 
+<li><a href="index.html"> خانه  </a></li>   
+</ul>   
+</div> 
+</div>
+
+
+
+    
+    
+ <!------------Footer----------->
+<section class="fixed-bottom" dir="rtl">
+<div class="container tex-center">
+   
+    <p style="font-size: 18px;text-align: center;color:wheat">طراحی شده توسط<b style="color:darkorange;font-weight: bold;font-size: 21px"> کیارش کنعانی</b> </p></div>    
+</section>  
+     
+    
+    
+    
+    
+</body>
+</html>
